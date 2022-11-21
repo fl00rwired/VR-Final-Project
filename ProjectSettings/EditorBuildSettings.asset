@@ -17,9 +17,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Challenges/03_Training/Scenes/Training_Prototype_Broken.unity
     guid: e10ba84ccef4c43aa995ace104c1bf8c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VREscapeRoom_Start.unity
     guid: 153f4a5c2f5a44748b0bd920bd1fe0ff
+  - enabled: 1
+    path: Assets/Scenes/NewScene.unity
+    guid: a154796d58beeec4387b0fcb62c43fed
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ed72be55522c8448bae8b0d66fa21adf,
       type: 2}
