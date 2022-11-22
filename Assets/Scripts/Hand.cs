@@ -10,6 +10,7 @@ public class Hand :  MonoBehaviour
 
     public Transform transform;
 
+    private GameObject spawnHand;
    
 
     //Stores what kind of characteristics we're looking for with our Input Device when we search for it later
@@ -19,7 +20,10 @@ public class Hand :  MonoBehaviour
     private InputDevice _targetDevice;
     private Animator _handAnimator;
 
-
+    private void OnEnable()
+    {
+        InitializeHand();
+    }
     private void Start()
     {
         InitializeHand();
@@ -38,8 +42,11 @@ public class Hand :  MonoBehaviour
             
             _targetDevice = devices[0];
 
-            GameObject spawnedHand = Instantiate(handPrefab, transform);
-            _handAnimator = spawnedHand.GetComponent<Animator>();
+            if (spawnHand == null)
+            {
+                spawnHand = Instantiate(handPrefab, transform);
+                _handAnimator = spawnHand.GetComponent<Animator>();
+            }
         }
     }
 
@@ -80,5 +87,9 @@ public class Hand :  MonoBehaviour
         }
     }
 
+    public void DestroyHands()
+    {
+        Destroy(spawnHand);
+    }
 
 }
