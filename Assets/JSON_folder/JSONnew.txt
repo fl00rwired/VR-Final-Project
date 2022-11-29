@@ -1,0 +1,23 @@
+{
+	"product": [
+	
+		{
+			"name": "Z-bot 720",
+			"type": "console",
+			"price": 150000,
+			"info": "Retro collector's edition console from the SEGA era"
+		},
+		{
+			"name": "IPhone 13 Plus",
+			"type": "phone",
+			"price": 120000,
+			"info": "State of the art flagship with next-gen processors"
+		},
+		{
+			"name": "Smart Tab",
+			"type": "tab",
+			"price": 50000,
+			"info": "State of the art tablet with next-gen processors"
+		}
+	]
+}
