@@ -1,5 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using UnityEngine;
+using Photon.Pun;
+
 
 /// <summary>
 /// Apply forward force to instantiated prefab
@@ -17,7 +19,8 @@ public class LaunchProjectile : MonoBehaviour
 
     public void Fire()
     {
-        GameObject newObject = Instantiate(projectilePrefab, startPoint.position, startPoint.rotation);
+        
+        GameObject newObject = PhotonNetwork.InstantiateRoomObject("Projectile_Dart", startPoint.position, startPoint.rotation, 0);  //Instantiate(projectilePrefab, startPoint.position, startPoint.rotation);
 
         if (newObject.TryGetComponent(out Rigidbody rigidBody))
             ApplyForce(rigidBody);

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Pun;
 
 
 public class JSONReader : MonoBehaviour
@@ -55,7 +56,8 @@ public class JSONReader : MonoBehaviour
             }
             else if (myProductList.product[i].type == "tab")
             {
-                Instantiate(prefab1, currentloc);
+                PhotonNetwork.InstantiateRoomObject("Tablet_Purple", currentloc.position, Quaternion.identity, 0);
+                
                 count_of_instantiated++;
             }
             else

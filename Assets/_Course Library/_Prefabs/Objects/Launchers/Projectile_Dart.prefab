@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4816542784680726574}
   - component: {fileID: 7292237562394797284}
   - component: {fileID: 156512756327896269}
-  - component: {fileID: 2153342241824281762}
   - component: {fileID: 5882061780000677774}
   m_Layer: 0
   m_Name: Projectile_Dart
@@ -99,19 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.018607754, y: 0.018325062, z: 0.09146057}
   m_Center: {x: -4.656613e-10, y: 0.00028487295, z: 0.045843713}
---- !u!114 &2153342241824281762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9093831001618171185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56b982c85b468f45a3260808d7ea637, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 4
 --- !u!54 &5882061780000677774
 Rigidbody:
   m_ObjectHideFlags: 0
